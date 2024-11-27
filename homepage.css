@@ -61,7 +61,7 @@
   position: absolute;
   background-color: white;
   width: 22vw;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 2vh 1vw;
   z-index: 1;
@@ -70,59 +70,57 @@
 .countrybtn:hover .country-name {
   display: block;
 }
-.country-name h5{
+.country-name h5 {
   padding-top: 2vh;
   font-size: 1.1vw;
   font-weight: 700;
 }
-.country-name p{
+.country-name p {
   font-size: 1vw;
-  padding-top: .7vh;
+  padding-top: 0.7vh;
 }
-.signin{
-  background: #FF6600;
+.signin {
+  background: #ff6600;
   height: 5vh;
   border-radius: 20px;
   text-align: center;
-  padding-top: .6vh;
-
+  padding-top: 0.6vh;
 }
-.signin a{
+.signin a {
   text-decoration: none;
   color: white;
   font-size: 1vw;
   font-weight: 600;
 }
-.country-name hr{
+.country-name hr {
   width: 20vw;
-  
 }
-.country-name span{
+.country-name span {
   display: flex;
   justify-content: center;
 }
-.country-name input{
+.country-name input {
   width: 19.6vw;
   border: 1px solid silver;
   border-radius: 5px;
   height: 5vh;
-  padding: 10px ;
+  padding: 10px;
   font-size: 1vw;
 }
-.country-name input:hover{
+.country-name input:hover {
   border: 2px solid rgb(31, 106, 246);
 }
-.postcode{
+.postcode {
   display: flex;
   flex-direction: column;
   padding-top: 1.5vh;
   gap: 1.3vw;
 }
-.postcode input{
-  border: 1px   solid rgba(201, 200, 200, 0.616);
+.postcode input {
+  border: 1px solid rgba(201, 200, 200, 0.616);
 }
-.postcode a{
-  background: #FF6600;
+.postcode a {
+  background: #ff6600;
   color: white;
   border-radius: 20px;
   text-align: center;
@@ -136,18 +134,18 @@
   color: white;
   font-size: 1.2vw;
 }
-.signin-form{
+.signin-form {
   display: none;
   position: absolute;
   background-color: white;
   width: 22vw;
   height: 20vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 2vh 1vw;
   z-index: 1;
 }
-.logins:hover .signin-form{
+.logins:hover .signin-form {
   display: block;
 }
 .subheader {
@@ -178,18 +176,32 @@
   color: white;
   text-decoration: none;
 }
+.subleft button {
+  background-color: transparent;
+  border: none;
+}
+.buyer-central-desc {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 90%;
+  height: 60vh;
+}
+.subleft:hover .buyer-central-desc {
+  display: block;
+}
 /* -----------------------------------------------------Subheader Description  */
-.subheader-desc-container{
+.subheader-desc-container {
   display: none;
   position: absolute;
   background-color: white;
   width: 95%;
   height: 50vh;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 2vh 1vw;
   z-index: 1;
 }
-.subheader:hover .subheader-desc-container{
+.subheader:hover .subheader-desc-container {
   display: flex;
 }
 
