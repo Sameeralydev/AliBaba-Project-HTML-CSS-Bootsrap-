@@ -56,9 +56,99 @@
   padding-top: 1.2vh;
   color: white;
 }
+.country-name {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 22vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 2vh 1vw;
+  z-index: 1;
+}
+
+.countrybtn:hover .country-name {
+  display: block;
+}
+.country-name h5{
+  padding-top: 2vh;
+  font-size: 1.1vw;
+  font-weight: 700;
+}
+.country-name p{
+  font-size: 1vw;
+  padding-top: .7vh;
+}
+.signin{
+  background: #FF6600;
+  height: 5vh;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: .6vh;
+
+}
+.signin a{
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  font-weight: 600;
+}
+.country-name hr{
+  width: 20vw;
+  
+}
+.country-name span{
+  display: flex;
+  justify-content: center;
+}
+.country-name input{
+  width: 19.6vw;
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 5vh;
+  padding: 10px ;
+  font-size: 1vw;
+}
+.country-name input:hover{
+  border: 2px solid rgb(31, 106, 246);
+}
+.postcode{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5vh;
+  gap: 1.3vw;
+}
+.postcode input{
+  border: 1px   solid rgba(201, 200, 200, 0.616);
+}
+.postcode a{
+  background: #FF6600;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 600;
+  height: 5vh;
+  padding: 1vh 0;
+  text-decoration: none;
+}
 .logins i {
   color: white;
   font-size: 1.2vw;
+}
+.signin-form{
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 22vw;
+  height: 20vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 2vh 1vw;
+  z-index: 1;
+}
+.logins:hover .signin-form{
+  display: block;
 }
 .subheader {
   display: flex;
@@ -88,6 +178,22 @@
   color: white;
   text-decoration: none;
 }
+/* -----------------------------------------------------Subheader Description  */
+.subheader-desc-container{
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 95%;
+  height: 50vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 2vh 1vw;
+  z-index: 1;
+}
+.subheader:hover .subheader-desc-container{
+  display: flex;
+}
+
+/* ----------------------------------------------------body  */
 .body {
   display: flex;
   color: white;
