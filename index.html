@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <title>Ali Baba.com</title>
+  </head>
+  <body>
+    <!-- bg img -->
+    <div class="bodyimg">
+      <img src="Assets/bodyimg.avif" alt="Person is smiling." />
+    </div>
+    <!-- header -->
+    <div class="header">
+      <div class="logo">Ali Baba.com</div>
+      <div class="headerleft">
+        <div class="countrybtn">
+          <button>Deliver to:</button>
+          <div class="country-name">
+            <form>
+              <h5>Specify your location</h5>
+              <p>Shipping options and fees vary based on your location</p>
+              <div class="signin"><a href="#">Sign in to add address</a></div>
+              <hr />
+              <select id="country" name="country" class="form-control">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">
+                  Bosnia and Herzegovina
+                </option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Territory">
+                  British Indian Ocean Territory
+                </option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">
+                  Central African Republic
+                </option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">
+                  Cocos (Keeling) Islands
+                </option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Congo, The Democratic Republic of The">
+                  Congo, The Democratic Republic of The
+                </option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote D'ivoire">Cote D'ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands (Malvinas)">
+                  Falkland Islands (Malvinas)
+                </option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">
+                  French Southern Territories
+                </option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-bissau">Guinea-bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard Island and Mcdonald Islands">
+                  Heard Island and Mcdonald Islands
+                </option>
+                <option value="Holy See (Vatican City State)">
+                  Holy See (Vatican City State)
+                </option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran, Islamic Republic of">
+                  Iran, Islamic Republic of
+                </option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of">
+                  Korea, Democratic People's Republic of
+                </option>
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Lao People's Democratic Republic">
+                  Lao People's Democratic Republic
+                </option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libyan Arab Jamahiriya">
+                  Libyan Arab Jamahiriya
+                </option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macao">Macao</option>
+                <option value="Macedonia, The Former Yugoslav Republic of">
+                  Macedonia, The Former Yugoslav Republic of
+                </option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia, Federated States of">
+                  Micronesia, Federated States of
+                </option>
+                <option value="Moldova, Republic of">
+                  Moldova, Republic of
+                </option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Netherlands Antilles">
+                  Netherlands Antilles
+                </option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands">
+                  Northern Mariana Islands
+                </option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestinian Territory, Occupied">
+                  Palestinian Territory, Occupied
+                </option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn">Pitcairn</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Helena">Saint Helena</option>
+                <option value="Saint Kitts and Nevis">
+                  Saint Kitts and Nevis
+                </option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Pierre and Miquelon">
+                  Saint Pierre and Miquelon
+                </option>
+                <option value="Saint Vincent and The Grenadines">
+                  Saint Vincent and The Grenadines
+                </option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">
+                  Sao Tome and Principe
+                </option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia and The South Sandwich Islands">
+                  South Georgia and The South Sandwich Islands
+                </option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen">
+                  Svalbard and Jan Mayen
+                </option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syrian Arab Republic">
+                  Syrian Arab Republic
+                </option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania, United Republic of">
+                  Tanzania, United Republic of
+                </option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-leste">Timor-leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">
+                  Turks and Caicos Islands
+                </option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">
+                  United Arab Emirates
+                </option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands">
+                  United States Minor Outlying Islands
+                </option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Virgin Islands, British">
+                  Virgin Islands, British
+                </option>
+                <option value="Virgin Islands, U.S.">
+                  Virgin Islands, U.S.
+                </option>
+                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <div class="postcode">
+                <input type="number" placeholder="Postcode 2000" />
+                <a href="#">Save</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="logins">
+          <a href="#"><i class="bx bx-user-circle"></i>Sign in</a
+          ><a href="signuppage.html" class="signup">Sign up</a>
+          <!-- <div class="signin-form"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- header ended -->
+    <!-- subheader starts -->
+    <div class="subheader">
+      <div class="subright">
+        <button><i class="bx bx-menu"></i>All Categories</button>
+        <a href="#">Featured Selection</a>
+        <a href="#">Trade Assurance</a>
+      </div>
+      <div class="subleft">
+        <button><a href="#">Buyer Central</a></button>
+        <div class="buyer-central-desc"></div>
+        <button><a href="#">Help Center</a></button>
+        <button><a href="#">Get the app</a></button>
+        <button><a href="#">Become a supplier</a></button>
+      </div>
+    </div>
+    <!-- subheader ended -->
+    <!-- body -->
+    <div class="body">
+      <div class="maintext">
+        <h3><i class="bx bx-play-circle"></i>Learn about Alibaba.com</h3>
+        <h1>The leading B2B ecommerce platform for global trade</h1>
+        <div class="search">
+          <input type="text" placeholder="Search.." name="Search" />
+          <div class="srchbtn"><i class="bx bx-camera"></i></div>
+          <div class="srchbtn2">
+            <button type="submit"><i class="bx bx-search"></i>Search</button>
+          </div>
+        </div>
+        <div class="fsearch">
+          <div class="fsrch"><p>Frequently searched:</p></div>
+          <div class="fsrchbtn">
+            <a href="#">Iphones 15 pro max</a>
+            <a href="#">denim tears</a>
+            <a href="#">woman's clothing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body ended -->
+    <!-- brown body -->
+    <div class="brownbody">
+      <div class="boxholder">
+        <div class="boxes">
+          <div class="icon-container">
+            <img
+              src="//s.alicdn.com/@img/imgextra/i1/O1CN01tbfptg1Fv1tsyww7q_!!6000000000548-2-tps-96-96.png"
+              class="icons"
+            />
+          </div>
+          <div class="title-container">
+            <h2>Millions of business offerings</h2>
+          </div>
+          <div class="content-container">
+            <p>
+              Explore products and suppliers for your business from millions of
+              offerings worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon-container">
+            <img
+              src="//s.alicdn.com/@img/imgextra/i2/O1CN01VxEwc91YXeNmcyV6j_!!6000000003069-2-tps-96-96.png"
+              class="icons"
+            />
+          </div>
+          <div class="title-container">
+            <h2>Assured quality and transactions</h2>
+          </div>
+          <div class="content-container">
+            <p>
+              Ensure production quality from verified suppliers, with your
+              orders protected from payment to delivery.
+            </p>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon-container">
+            <img
+              src="//s.alicdn.com/@img/imgextra/i2/O1CN01WxanpW1Hv9ESW9cfs_!!6000000000819-2-tps-96-96.png"
+              class="icons"
+            />
+          </div>
+          <div class="title-container"><h2>One-stop trading solution</h2></div>
+          <div class="content-container">
+            <p>
+              Order seamlessly from product/supplier search to order management,
+              payment, and fulfillment.
+            </p>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon-container">
+            <img
+              src="//s.alicdn.com/@img/imgextra/i4/O1CN010nrLfB25RaSKdVtHu_!!6000000007523-2-tps-96-96.png"
+              class="icons"
+            />
+          </div>
+          <div class="title-container">
+            <h2>Tailored trading experience</h2>
+          </div>
+          <div class="content-container">
+            <p>
+              Get curated benefits, such as exclusive discounts, enhanced
+              protection, and extra support, to help grow your business every
+              step of the way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- brown body ends -->
+    <!-- 3rd body starts -->
+    <div class="industry-category-container">
+      <div class="industry-category">
+        <div class="industry-container-info">
+          <div class="title-home">
+            <p>Explore millions of offerings tailored to your business needs</p>
+          </div>
+          <div class="category-number">
+            <div class="number-items">
+              200M+
+              <p>products</p>
+            </div>
+            <div class="number-items">
+              200K+
+              <p>suppliers</p>
+            </div>
+            <div class="number-items">
+              5,900
+              <p>product categories</p>
+            </div>
+            <div class="number-items">
+              200+
+              <p>countries and regions</p>
+            </div>
+          </div>
+        </div>
+        <!-- industry list slider -->
+        <div class="industry-list">
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i3/O1CN01fm34sD1PrUwNSEFdk_!!6000000001894-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Business Services</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i4/O1CN01WD8L611FtC7zB5hSv_!!6000000000544-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Environment</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01Si2Chv1URSNSZI3w2_!!6000000002514-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Apparel & Accesories</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01lTlEA71idHDZyDnE1_!!6000000004435-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Consumer Electronics</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01FNDTXs1Js3bqyZjbx_!!6000000001083-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Home & Garaden</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01pTq4g71X95KxEqsrz_!!6000000002880-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Sports & Entertainment</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i3/O1CN01gRUkNN1sW5HWJb8Me_!!6000000005773-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Beauty</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i4/O1CN01pbpLad1tk6uA15t5q_!!6000000005939-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Commercial Euipment</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i4/O1CN01c8xN8n1Xl6DAeTUDe_!!6000000002963-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Packaging & Printing</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i1/O1CN01SECwAR1ehcde7HSzA_!!6000000003903-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Mother, Kids & Toys</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i1/O1CN012sGbIl1o81tW54KPo_!!6000000005179-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Jewelry</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i1/O1CN01GqpTkM1kCNBbXXtfT_!!6000000004647-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Shoes & Accecories</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01kxhWs527Gi6Fzc3zF_!!6000000007770-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Vehical & Parts</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i2/O1CN01pq9lU028SRrrtj79B_!!6000000007931-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Furniture</p>
+              </div>
+            </div>
+          </div>
+          <div class="industry-row">
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i4/O1CN01SjYZ821m8pTY9ruQ1_!!6000000004910-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Industrial Machinery</p>
+              </div>
+            </div>
+            <div class="element">
+              <div class="element-container">
+                <img
+                  src="//s.alicdn.com/@img/imgextra/i4/O1CN01yvRa9M1eCTa1vhbZ9_!!6000000003835-2-tps-200-200.png"
+                  class="element-img"
+                />
+                <p>Tools & Hardware</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- industry slider ended  -->
+    <div class="floor-container">
+      <div class="new-user-business-floor">
+        <div class="new-business-title">
+          <p>Discover your next business opportunity</p>
+        </div>
+        <div class="all-floors">
+          <div class="ranking-card-box">
+            <div class="ranking-title">
+              <div class="card-title"><p>Top Ranking</p></div>
+              <a href="#">View more</a>
+            </div>
+            <!-- Ranking card -->
+            <div class="ranking-card-slider-box">
+              <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="item-title">
+                      <h6>Most popular</h6>
+                      <p>Ballpoint Pens</p>
+                    </div>
+                    <img
+                      src="Assets/pens.webp"
+                      class="ranking-items"
+                      alt="pens"
+                    />
+                    <div class="related-items">
+                      <img src="Assets/pen1.webp" alt="pen" class="rlitems" />
+                      <img src="Assets/pen2.avif" alt="pen" class="rlitems" />
+                      <img src="Assets/pen3.webp" alt="pen" class="rlitems" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-title">
+                      <h6>Most popular</h6>
+                      <p>Recycleable paper bags</p>
+                    </div>
+                    <img
+                      src="Assets/bag.avif"
+                      class="ranking-items"
+                      alt="bags"
+                    />
+                    <div class="related-items">
+                      <img src="Assets/bag1.avif" alt="bags" class="rlitems" />
+                      <img src="Assets/bag2.avif" alt="bags" class="rlitems" />
+                      <img src="Assets/bag3.webp" alt="bags" class="rlitems" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-title">
+                      <h6>Most popular</h6>
+                      <p>Setup box</p>
+                    </div>
+                    <img
+                      src="Assets/laptop.avif"
+                      class="ranking-items"
+                      alt="laptop"
+                    />
+                    <div class="related-items">
+                      <img
+                        src="Assets/laptop1.avif"
+                        alt="laptop"
+                        class="rlitems"
+                      />
+                      <img
+                        src="Assets/laptop2.avif"
+                        alt="laptop"
+                        class="rlitems"
+                      />
+                      <img
+                        src="Assets/laptop3.avif"
+                        alt="laptop"
+                        class="rlitems"
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="item-title">
+                      <h6>Most popular</h6>
+                      <p>Men's printed T-shirts</p>
+                    </div>
+                    <img
+                      src="Assets/shirt.avif"
+                      class="ranking-items"
+                      alt="nike-shirt"
+                    />
+                    <div class="related-items">
+                      <img
+                        src="Assets/shirt1.avif"
+                        alt="shirts"
+                        class="rlitems"
+                      />
+                      <img
+                        src="Assets/shirt2.avif"
+                        alt="shirts"
+                        class="rlitems"
+                      />
+                      <img
+                        src="Assets/shirt3.webp"
+                        alt="shirts"
+                        class="rlitems"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Arrivals -->
+          <div class="new-arrivals-box">
+            <div class="new-arrivals-title">
+              <div class="card-title"><p>New Arrivals</p></div>
+              <a href="#">View more</a>
+            </div>
+            <div class="new-arrival-items">
+              <div class="item-title">
+                <h6>133,000+ products added today</h6>
+              </div>
+              <div class="NA-items">
+                <div class="NA-items1">
+                  <div class="NA-itmes-icon">
+                    <img
+                      src="Assets/NAjacket.avif"
+                      alt="jacket"
+                      class="NAimg"
+                    />
+                  </div>
+                  <div class="NA-itmes-icon">
+                    <img
+                      src="Assets/NAtracksuit.avif"
+                      alt="tracksuit"
+                      class="NAimg"
+                    />
+                  </div>
+                </div>
+                <div class="NA-items2">
+                  <div class="NA-itmes-icon">
+                    <img
+                      src="Assets/NAblacksuit.avif"
+                      alt="blacksuit"
+                      class="NAimg"
+                    />
+                  </div>
+                  <div class="NA-itmes-icon">
+                    <img src="Assets/NAshoes.avif" alt="shoes" class="NAimg" />
+                  </div>
+                </div>
+              </div>
+              <div class="new-launch">
+                <div class="new-item-lunch">
+                  <img
+                    src="Assets/newlaunch.webp"
+                    alt="new launch item"
+                    class="nliimg"
+                  />
+                </div>
+                <div class="launch-title">
+                  <h6>New this week</h6>
+                  <p>Products from verified Supliers only</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- spotlight  -->
+          <div class="saving-spotlight-box">
+            <div class="spotlight-title">
+              <div class="card-title"><p>Top deals</p></div>
+              <a href="#">View more</a>
+            </div>
+            <div class="saving-spotlight-card">
+              <div class="spotlight-element">
+                <div class="spotlight-img">
+                  <img
+                    src="Assets/spotlight1.avif"
+                    alt="water bottles"
+                    class="spotlightimg"
+                  />
+                </div>
+                <div class="spotlight-content">
+                  <h6>180-day lowest price</h6>
+                </div>
+              </div>
+              <div class="best-product-card">
+                <div class="best-product-title">
+                  <h6>Deals on best sellers</h6>
+                  <div class="deals">
+                    <img src="Assets/deals.avif" alt="caps" class="dealsimg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- factory floor container  -->
+    <div class="factory-floor-container">
+      <div class="factory-floor-enterance">
+        <div class="factory-floor-title">
+          <h4>Source direct-from-factory</h4>
+        </div>
+        <div class="enterance-card-floor">
+          <div class="enterance-cards1">
+            <div class="enterance-card1-title"><p>Get Samples</p></div>
+            <div class="enterance-card1-link"><a href="#">View more</a></div>
+          </div>
+          <div class="enterance-cards2">
+            <div class="enterance-card2-title">
+              <p>Take factory live tour</p>
+            </div>
+            <div class="enterance-card2-link"><a href="#">View LIVE</a></div>
+          </div>
+          <div class="enterance-cards3">
+            <div class="enterance-card3-title">
+              <p>Connect with top-ranking manufacturing</p>
+            </div>
+            <div class="enterance-card3-link"><a href="#">View more</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------Security floor  -->
+    <div class="security-floor-container">
+      <div class="security-floor-title">
+        <h1>
+          Trade with confidence from production quality to purchase protection
+        </h1>
+      </div>
+      <div class="security-floor-card-container">
+        <div class="security-guarantee-card">
+          <div class="security-guarantee-card-title">
+            <p>Ensure production quality with</p>
+          </div>
+          <div class="guarantee-icon">
+            <img
+              src="Assets/guarantee-icon.avif"
+              alt="guarantee-icon"
+              class="guarantee-icon-img"
+            />
+          </div>
+          <div class="security-content">
+            <p>
+              Connect with a variety of suppliers with third-party-verified
+              credentials and capabilities. Look for the "Verified" logo to
+              begin sourcing with experienced suppliers your business could rely
+              on.
+            </p>
+          </div>
+          <div class="security-floor-action">
+            <div class="security-floor-watch">
+              <a href="#"><i class="bx bx-play-circle"></i> Watch video</a>
+            </div>
+            <div class="security-floor-link"><a href="#"> Learn more</a></div>
+          </div>
+        </div>
+        <div class="security-assurance-card">
+          <div class="security-assurance-title">
+            <p>Protect your purchase with</p>
+          </div>
+          <div class="assurance-icon">
+            <img
+              src="Assets/assurance.avif"
+              alt="assurance"
+              class="assuranceimg"
+            />
+          </div>
+          <div class="assurance-content">
+            <p>
+              Source confidently with access to secure payment options,
+              protection against product or shipping issues, and mediation
+              support for any purchase-related concerns when you order and pay
+              on Alibaba.com.
+            </p>
+          </div>
+          <div class="assurance-floor-action">
+            <div class="assurance-floor-watch">
+              <a href="#"><i class="bx bx-play-circle"></i> Watch video</a>
+            </div>
+            <div class="assurance-floor-link"><a href="#"> Learn more</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------Service Navigation  -->
+    <!-- <div class="service-navigation">
+      <div class="service-link-box">
+        <div class="service-link-title">
+          <h1>
+            Streamline ordering from search to fulfillment, all in one place
+          </h1>
+        </div>
+        <ul class="full-link-item-container">
+          <li class="full-link-item"></li>
+          <li class="full-link-item"></li>
+          <li class="full-link-item"></li>
+          <li class="full-link-item"></li>
+          <li class="full-link-item"></li>
+          <div class="full-link-item-tail"></div>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- -------------------------------------------- service-navigation  -->
+    <div class="service-navigation2-container">
+      <div class="service-navigation-title">
+        <p>
+          Get tailored discounts, services, and tools for your business stage.
+        </p>
+      </div>
+      <div class="service-content">
+        <p>
+          Grow with curated benefits offered by the free Alibaba.com Membership,
+          whether you are a small business needing the essentials to start
+          sourcing or a well-established enterprise looking for tools and
+          solutions for more complex orders.
+        </p>
+      </div>
+      <div class="service-navigation-link"><a href="#">Learn more</a></div>
+      <div class="service-navigation-slider">
+        <div class="service-navigation-carousel">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="Assets/carousel.JPG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Assets/carousel1.JPG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Assets/carousel2.JPG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------signup  -->
+    <div class="signup-container">
+      <div class="login-guid">
+        <div class="login-guid-title"><p>Ready to get started?</p></div>
+        <div class="login-guide-detail">
+          <p>
+            Explore millions of products from trusted suppliers by signing up
+            today!
+          </p>
+        </div>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------- vision floor  -->
+    <div class="vision-floor">
+      <div class="vision-floor-title">
+        <div class="vision-text">
+          <h1>Empowering businesses through global trade</h1>
+        </div>
+        <div class="vision-description">
+          <p>
+            Alibaba.com offers one-stop B2B trading solutions for global small
+            and medium-sized businesses, empowering them to transform through
+            digital trade, grasp opportunities, and accelerate growth
+            internationally.
+          </p>
+        </div>
+      </div>
+      <div class="vision-graphic-container">
+        <div class="vision-graphic1">
+          <div class="graphic1-title"><p>OUR MISSION</p></div>
+          <div class="graphic1-desc">
+            <p>Make it easy to do business anywhere.</p>
+          </div>
+        </div>
+        <div class="vision-graphic2">
+          <div class="explore-graphic1">
+            <div class="explore-desc1">
+              <div class="explore-title"><p>OUR LOCATIONS</p></div>
+              <div class="explore-text">
+                <p>We have teams around the world.</p>
+              </div>
+            </div>
+            <div class="explore-names">
+              <p>
+                Hangzhou, China Paris, France Munich, Germany Tokyo, Japan
+                Seoul, Korea London, UK New York, US ... and many other
+                locations worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="explore-graphic2">
+            <div class="graphic2-title"><p>OUR ESG PROMISES</p></div>
+            <div class="graphic2-desc">
+              <p>Responsible technology. Sustainable future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------------------------------------- Countries Content  -->
+    <div class="countries-container">
+      <div class="container-title">
+        <p>Find suppliers by country or region</p>
+        <a href="#">View more</a>
+      </div>
+      <div class="countries-icon-container">
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/japan.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>Japan</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/italy.avif" alt="" class="countryimgitaly" />
+          </div>
+          <div class="countries-names"><p>Italy</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/turkey.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>Turkey</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/malaysia.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>Malaysia</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/south korea.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>South Korea</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/vietnam.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>Vietnam</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/russia.png" alt="" class="countryimgrussia" />
+          </div>
+          <div class="countries-names"><p>Russia</p></div>
+        </div>
+        <div class="countries-icon">
+          <div class="icon-img-container">
+            <img src="Assets/thailand.png" alt="" class="countryimg" />
+          </div>
+          <div class="countries-names"><p>Thailand</p></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- ----------------------------------------------------------- footer  -->
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <div class="links-title"><p>Get support</p></div>
+          <div class="link-content">
+            <a href="#">Help Center </a>
+            <a href="#">Live chat</a>
+            <a href="#">Check order status</a>
+            <a href="#">Refunds</a>
+            <a href="#">Report abuse</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="links-title"><p>Payments and protections</p></div>
+          <div class="link-content">
+            <a href="#">Safe and easy payments</a>
+            <a href="#">Money-back policy</a>
+            <a href="#">On-time shipping</a>
+            <a href="#">After-sales protections</a>
+            <a href="#">Product monitoring services</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="links-title"><p>Source on Alibaba.com</p></div>
+          <div class="link-content">
+            <a href="#">Request for Quotation</a>
+            <a href="#">Membership program</a>
+            <a href="#">Alibaba.com Logistics</a>
+            <a href="#">Sales tax and VAT</a>
+            <a href="#">Alibaba.com Reads</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="links-title"><p>Sell on Alibaba.com</p></div>
+          <div class="link-content">
+            <a href="#">Start selling</a>
+            <a href="#">Seller Central</a>
+            <a href="#">Become a Verified Supplier</a>
+            <a href="#">Partnerships</a>
+            <a href="#">Download the app for suppliers</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="links-title"><p>Get to know us</p></div>
+          <div class="link-content">
+            <a href="#">About Alibaba.com</a>
+            <a href="#">Corporate responsibility</a>
+            <a href="#">News center</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+      </div>
+      <div class="payment-icons">
+        <img
+          src="Assets/paymenticons.JPG"
+          alt="payment-icons"
+          class="paymentimg"
+        />
+      </div>
+      <div class="social-content">
+        <div class="socialapp-icons">
+          <i class="bx bxl-facebook-square"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-youtube"></i>
+          <i class="bx bxl-tiktok"></i>
+        </div>
+        <div class="getapp-icons">
+          <div class="trade-link">
+            <p>Trade on the go with the</p>
+            <a href="#"> Alibaba.com app</a>
+          </div>
+          <div class="getapp-links">
+            <img src="Assets/iosappimg.avif" alt="" class="getappimg" /><img
+              src="Assets/playstoreimg.avif"
+              alt=""
+              class="getappimg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</html>
